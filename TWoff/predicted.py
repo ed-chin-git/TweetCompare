@@ -20,6 +20,6 @@ def predict_user(user1_name, user2_name, tweet_text):
     log_reg = LogisticRegression().fit(embeddings, labels)
     tweet_embedding = BASILICA.embed_sentence(tweet_text, model='twitter')
 
-    ## import pdb; pdb.set_trace() #  launch debug 
+    # import pdb; pdb.set_trace() #  launch debug 
 
     return log_reg.predict(np.array(tweet_embedding).reshape(1, -1))

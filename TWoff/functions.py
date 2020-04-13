@@ -1,4 +1,4 @@
-from TWpred.twitter_API import *
+from TWoff.twitter_API import *
 
 def adduser(tw_handle):
    #   Get TW user info 

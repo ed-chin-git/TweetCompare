@@ -1,4 +1,4 @@
-""" Main application and routing logic for TweetR """
+""" Main application and routing logic for TWoff """
 from flask import Flask, request, render_template
 from .models import DB, User, Tweet
 from decouple import config
@@ -66,7 +66,8 @@ def create_app():
     return app
 
        
-#  to run from terminal : set FLASK_APP=TWpred:APP
+#  to run from terminal : cd to TWEETCOMPARE directory
+#                         set FLASK_APP=TWoff:APP
 #                   +     flask run   OR    flask shell
 
  
